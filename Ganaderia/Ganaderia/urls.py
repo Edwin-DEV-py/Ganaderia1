@@ -16,7 +16,7 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path
-from Aplicaciones.Vistas1.views import inicio,categorias
+from Aplicaciones.Vistas1.views import inicio,categorias, seccion
 from django.conf import settings
 from django.conf.urls.static import static 
 
@@ -24,6 +24,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',inicio,name='index'),
     path('categorias.html',categorias,name='categorias'),
+    path('seccion.html',seccion,name='seccion')
 ]
 
 if settings.DEBUG:

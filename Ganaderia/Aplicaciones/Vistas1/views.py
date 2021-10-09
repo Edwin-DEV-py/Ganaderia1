@@ -6,4 +6,7 @@ def inicio(request):
 def categorias(request):
     return render(request,'categorias.html')
 
+def seccion(request):
+    return render(request, 'seccion.html')
+
 # Create your views here.

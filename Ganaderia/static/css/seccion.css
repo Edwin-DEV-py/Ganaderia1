@@ -1,0 +1,31 @@
+div .anuncio .inicio_seccion{
+    display: inline-block;
+}
+.anuncio{
+    width: 30%;
+    height: 551px;
+    background:blue;
+    float: left;
+}
+.inicio_seccion{
+    width: 70%;
+    height: 551px;
+    background-color: lightblue;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inicio_seccion_hijo{
+    width: 50%;
+    height: 275px;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inicio_seccion_hijo a h2{
+    display: block;
+    padding: 10px 20px;
+    background-color: red;
+}

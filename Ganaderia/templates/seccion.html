@@ -1,0 +1,17 @@
+{% extends "index.html" %}
+{%load static%}
+{%block estilos%}
+<link rel="stylesheet" href="{% static 'css/principal.css' %}">
+<link rel="stylesheet" href="{% static 'css/seccion.css' %}">
+{%endblock estilos%}
+{%block body%}
+<div class="anuncio">
+
+</div>
+<div class="inicio_seccion">
+    <div class="inicio_seccion_hijo">
+        <a href=""><h2>Iniciar Seccion</h2></a>
+        <a href=""><h2>Crear Cuenta</h2></a>
+    </div>
+</div>
+{% endblock body %}

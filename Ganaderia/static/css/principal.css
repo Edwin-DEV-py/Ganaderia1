@@ -51,6 +51,14 @@ ul,ol{
 .ulnav li:hover > ul{
     display: block;
 }
+.Navegacion nav li .usuario{
+    background-color: #497D11;
+    padding: 5px 10px;
+}
+.usuario img{
+    width: 30px;
+    height: 30px;
+}
 /*
 .boton-responsive{
     height: 34px;
