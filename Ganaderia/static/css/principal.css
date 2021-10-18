@@ -39,14 +39,19 @@ ul,ol{
     display: block;
     color: white;
     padding: 10px 15px;
-    background-color: yellow;
+    background-color: rgb(191, 26, 26);
     margin-left: 10px;
+    border-radius: 10px;
 }
 .ulnav > li{
     float: left;
 }
 .ulnav li ul{
     display: none;
+}
+.ulnav li:hover a{
+    background-color: rgb(255, 111, 0);
+    border-radius: 0px;
 }
 .ulnav li:hover > ul{
     display: block;

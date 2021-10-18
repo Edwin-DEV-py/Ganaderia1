@@ -9,4 +9,10 @@ def categorias(request):
 def seccion(request):
     return render(request, 'seccion.html')
 
+def iniciar_seccion(request):
+    return render(request,'iniciar_seccion.html')
+
+def registrarse(request):
+    return render(request,'registrarse.html')
+
 # Create your views here.

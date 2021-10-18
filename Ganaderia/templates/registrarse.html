@@ -1,0 +1,56 @@
+{% extends 'index.html' %}
+{% load static %}
+{%block estilos%}
+<link rel="stylesheet" href="{% static 'css/principal.css' %}">
+<link rel="stylesheet" href="{% static 'css/registrarse.css' %}">
+{%endblock estilos%}
+{% block body %}
+{% block header %}
+{% endblock header %}
+<div class="Logo">
+    <img src="" alt="">
+</div>
+<hr>
+<div class="contenedor">
+    <div class="caja_formulario">
+        <div class="botones_caja">
+            <div id="elegir"></div>
+            <button class="boton" type="button" onclick="Cliente()">Usuario</button> 
+            <button class="boton" type="button" onclick="proveedor()">Proveedor</button>
+        </div>
+        <form id="Cliente" class="grupo_input">
+            <input type="text" class="texto_input" placeholder="Nombre">
+            <input type="email" class="texto_input" placeholder="Email">
+            <input type="password" class="texto_input" placeholder="Contraseña">
+            <input type="password" class="texto_input" placeholder="Repetir contraseña">
+            <button type="submit" class="boton_registrar">registrar</button>
+        </form>
+        <form id="proveedor" class="grupo_input">
+            <input type="text" class="texto_input" placeholder="Nombre">
+            <input type="text" class="texto_input" placeholder="Apellido">
+            <input type="email" class="texto_input" placeholder="Email">
+            <input type="tel" class="texto_input" placeholder="Celular">
+            <input type="password" class="texto_input" placeholder="Contraseña">
+            <input type="password" class="texto_input" placeholder="Repetir contraseña">
+            <button type="submit" class="boton_registrar">registrar</button>
+        </form>
+    </div>
+</div>
+<script>
+var x = document.getElementById("Cliente");
+var y = document.getElementById("proveedor");
+var z = document.getElementById("elegir");
+
+function Cliente(){
+    x.style.left = "50px";
+    y.style.left= "450px";
+    z.style.left = "0px"
+}
+
+function proveedor(){
+    x.style.left = "-400px";
+    y.style.left= "50px";
+    z.style.left = "120px" 
+}
+</script>
+{% endblock body %}

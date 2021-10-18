@@ -7,25 +7,29 @@ div .anuncio .inicio_seccion{
     background:blue;
     float: left;
 }
+body{
+    font-family: sans-serif;
+}
 .inicio_seccion{
-    width: 70%;
-    height: 551px;
-    background-color: lightblue;
-    float: left;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 200px;
+    padding: 40px;
+    position: absolute;
+    top: 60%;
+    left: 65%;
+    transform: translate(-50%,-50%);
+    background: #191919;
+    text-align: center;
 }
-.inicio_seccion_hijo{
-    width: 50%;
-    height: 275px;
-    background-color: aqua;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.inicio_seccion_hijo a h2{
+.inicio_seccion input[type="submit"]{
+    border: 0;
+    background: none;
     display: block;
-    padding: 10px 20px;
-    background-color: red;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
 }

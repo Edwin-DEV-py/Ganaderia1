@@ -1,0 +1,19 @@
+{% extends 'index.html' %}
+{% load static %}
+{%block estilos%}
+<link rel="stylesheet" href="{% static 'css/principal.css' %}">
+<link rel="stylesheet" href="{% static 'css/iniciar_seccion.css' %}">
+{%endblock estilos%}
+{% block body %}
+{% block header %}
+{% endblock header %}
+<div class="Logo">
+    <img src="" alt="">
+</div>
+<hr>
+<div class="iniciar_seccion">
+    <input type="text">
+    <input type="password">
+    <input type="submit">
+</div>
+{% endblock body %}
